@@ -1,0 +1,63 @@
+<mat-sidenav-container class="sidenav-container" opened>
+    <mat-sidenav #sidenav mode="side" class="sidenav" (closedStart)="onSidenavClose()" opened>
+      <!-- <div class="side-nav-content">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-list mt-4">
+          <li class="nav-item  mt-1" matRipple routerLinkActive="active" routerLink="./dashboard" role="button">
+            <i class="fa-solid fa-house"></i>
+            <span class="ms-3">
+              <a class="">Dashboard</a>
+            </span>
+          </li>
+          <mat-expansion-panel [class.mat-elevation-z0]="true" class="mt-1 sideNavDropDown text-white" (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false">
+            <mat-expansion-panel-header class="nav-item  mt-1 text-white" matRipple routerLinkActive="active">
+              <i class="fa-solid fa-chart-simple" id="panel-icon"></i>
+               <span class="ms-3">
+                <a href="" class="dropdownAnchor">Mobiles</a>
+               </span>
+            </mat-expansion-panel-header>
+            <mat-nav-list>
+                <a mat-list-item routerLink="#">
+                    <mat-icon>apple</mat-icon> IOS
+                </a>
+                <a mat-list-item routerLink="#">
+                    <mat-icon>android</mat-icon>Android
+                </a>
+            </mat-nav-list>
+        </mat-expansion-panel>
+          <li class="nav-item  mt-1" matRipple routerLinkActive="active" routerLink="./analytics" role="button">
+            <i class="fa-solid fa-chart-simple"></i>
+            <span class="ms-3">
+              <a class="">Analytics</a>
+            </span>
+          </li>
+        </ul>
+      </div> -->
+      <div class="side-nav-content">
+      <mat-nav-list class="navbar-nav me-auto mb-2 mb-lg-0 nav-list mt-4">
+        <a mat-list-item routerLink="./dashboard" routerLinkActive="active" matRipple>
+            <span class="mat-list-item-content">Dashboard</span>
+          </a>
+          <a mat-list-item routerLink="./analytics" routerLinkActive="active" class="">
+            <span class="mat-list-item-content">Analytics</span>
+          </a>
+          <mat-expansion-panel [class.mat-elevation-z0]="true" class="dropDownColor">
+            <mat-expansion-panel-header>
+                Frameworks
+            </mat-expansion-panel-header>
+            <mat-nav-list class="text-white">
+                <a mat-list-item routerLink="#">Spring</a>
+                <a mat-list-item routerLink="#">Hibernate</a>
+                <a mat-list-item routerLink="#">Struts</a>
+            </mat-nav-list>
+        </mat-expansion-panel>
+      </mat-nav-list>
+    </div>
+    </mat-sidenav>
+    <mat-sidenav-content class="main-content" [ngClass]="{'full-width': isSidenavClosed}">
+      <button class="menu-button ms-2 my-1" mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>

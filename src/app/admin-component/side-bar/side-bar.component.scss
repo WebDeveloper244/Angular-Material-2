@@ -1,0 +1,128 @@
+.sidenav-container {
+    height: 100%;
+    background: rgb(228, 245, 248);
+}
+
+.sidenav {
+    // background-image: linear-gradient(330deg, rgb(195, 236, 244) 20%, rgb(20, 212, 229)100%);
+    background: #202a30;
+    // background-color: white;
+}
+
+.sideNavDropDown {
+    background: #00000000;
+}
+
+.main-content {
+    margin-left: 200px;
+    height: 100%;
+}
+
+.full-width {
+    margin-left: 0;
+}
+
+.side-nav-content {
+    color: white;
+    font-family: poppins;
+    font-weight: 700;
+    width: 200px;
+    margin-left: 5px;
+    margin-right: 11px;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0px;
+}
+
+// .mat-expansion-panel-header:not([aria-disabled=true]) {
+//     cursor: pointer;
+//     background-color: black;
+// }
+
+// /
+
+// .mat-expansion-panel .mat-expansion-panel-header.cdk-keyboard-focused:not([aria-disabled=true]),
+// .mat-expansion-panel .mat-expansion-panel-header.cdk-program-focused:not([aria-disabled=true]),
+// .mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:hover:not([aria-disabled=true]) {
+//     background: rgba(0, 0, 0, .04)  !important;
+// }
+
+// .mat-expansion-panel[_ngcontent-ng-c3114070288]:not(.mat-expanded) .mat-expansion-panel-header[_ngcontent-ng-c3114070288]:hover:not([aria-disabled=true]) {
+//     background: rgba(255, 255, 255, 0.48) !important;
+// }
+
+// .mat-expansion-indicator::after {
+//     color: white !important;
+// }
+
+// a {
+//     text-decoration: none;
+//     color: white;
+//     cursor: pointer;
+// }
+
+.nav-item.active {
+    color:  rgba(255, 255, 255, 0.48) !important;
+    background-color: white;
+    padding: 10px;
+    // box-shadow: 0 0 5px rgba(8, 107, 107, 0.829);
+}
+
+.nav-item:hover {
+    background-color: rgb(152, 230, 233);
+    color: white;
+    padding: 10px;
+}
+
+.nav-item {
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+
+.menu-button {
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.menu-icon {
+    transition: opacity 0.3s;
+}
+
+.close-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.menu-button.active {
+    transform: rotate(180deg);
+}
+
+.menu-button.active .menu-icon {
+    opacity: 0;
+}
+
+.menu-button.active .close-icon {
+    opacity: 1;
+}
+
+
+// udated-code
+.mat-list-item-content{
+    color: #ffffff ;
+}
+.mat-ripple-element{
+    background: #000;
+}
+// .mdc-list-item:focus::before{
+//     background-color: rgba(255, 0, 0, 0.363);
+// }
+.mdc-list-item:hover{
+    background-color: rgb(255, 0, 0);
+}
+// udated-code
